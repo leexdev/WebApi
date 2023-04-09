@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./vendor/boostrap.css" />
+    <link rel="stylesheet" href="./CSS/register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="login-title">Register</h2>
+
+      <form class="login-form">
+        <div>
+          <label for="name">Name </label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Eren Buruk"
+            name="name"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="age">Age </label>
+          <input
+            id="age"
+            type="number"
+            min="0"
+            max="1000"
+            placeholder="Age"
+            name="age"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="login">Username </label>
+          <input
+            id="login"
+            type="text"
+            placeholder="Your username"
+            name="login"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="password">Password </label>
+          <input
+            id="password"
+            type="password"
+            placeholder="password"
+            name="password"
+            required
+          />
+        </div>
+
+        <button class="btn btn--form" type="submit" value="Log in">
+          Register
+        </button>
+
+        <p>Already have an account? <a href="/login.html">Login</a></p>
+      </form>
+    </div>
+  </body>
+</html>

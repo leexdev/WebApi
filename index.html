@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ogina</title>
+    <link rel="stylesheet" href="./vendor/Resert CSS.css" />
+    <link rel="stylesheet" href="./vendor/boostrap.css" />
+    <link
+      rel="stylesheet"
+      href="./CSS/fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="logo">
+              <a href="./index.html"><img src="./image/logo.png" alt="" /></a>
+            </div>
+            <div class="side-bar">
+              <ul>
+                <div class="title-side">All departments</div>
+                <li><a href="">Fresh Meat</a></li>
+                <li><a href="">Vegetables</a></li>
+                <li><a href="">Fruit & Nut Gifts</a></li>
+                <li><a href="">Fresh Berries</a></li>
+                <li><a href="">Ocean Foods</a></li>
+                <li><a href="">Butter & Eggs</a></li>
+                <li><a href="">Fastfood</a></li>
+                <li><a href="">Fresh Onion</a></li>
+                <li><a href="">Papayaya & Crisps</a></li>
+                <li><a href="">Oatmeal</a></li>
+                <li><a href="">Fresh Bananas</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="nav">
+              <a href="./index.html"><div class="title">Home</div></a>
+              <div class="icon-shop">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+                <a href="/login.html" id="login-button">Login</a>
+              </div>
+            </div>
+            <div class="input">
+              <div class="input-text">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="What do you neeed"
+                />
+              </div>
+              <div class="btn">SEACH</div>
+            </div>
+
+            <div class="content">
+              <div class="row" id="list-products">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
+    let click_side_bar = document.querySelector("title-side");
+
+    click_side_bar;
+    // const express = require("express");
+    // const cors = require("cors");
+
+    // const app = express();
+
+    // app.use(
+    //   cors({
+    //     origin: "http://127.0.0.1:7009",
+    //   })
+    // );
+
+    // // Các tài nguyên và route khác ở đây
+
+    // app.listen(7009, function () {
+    //   console.log("Máy chủ API đang chạy ở cổng 7009");
+    // });
+
+    // let listProducts = document.querySelector("#list-products");
+    // let productApi = "https://localhost:7009/api/Productcs";
+
+    // function start() {
+    //   getProducts(function (products) {
+    //     console.log(products);
+    //   });
+    // }
+
+    // start();
+
+    // function getProducts(callback) {
+    //   fetch(productApi)
+    //     .then(function (response) {
+    //       if (!response.ok) {
+    //         throw new Error("Network response was not ok");
+    //       }
+    //       return response.json();
+    //     })
+    //     .then(callback)
+    //     .catch(function (error) {
+    //       console.log("Error fetching products", error);
+    //     });
+    // }
+    // function getProducts() {
+    //   fetch(productApi, {
+    //     mode: "no-cors",
+    //   })
+    //     .then((response) => response.json())
+    //     .then((Products) => callback(Products))
+    //     .catch((error) => console.log(error));
+    //     console.log(Products);
+    // }
+    // const productApi = "https://localhost:7009/api/Productcs";
+
+    // function showAllProducts() {
+    //   fetch(productApi, { mode: "no-cors" })
+    //     .then((response) => response.json())
+    //     .then((Productcs) => {
+    //       console.log(Productcs);
+
+    //       // Hiển thị danh sách sản phẩm
+    //       const productListElement = document.getElementById("list-products");
+    //       productListElement.innerHTML = "";
+    //       products.forEach((Productcs) => {
+    //         const productElement = document.createElement("div");
+    //         productElement.classList.add("Productcs");
+    //         productElement.innerHTML = `
+    //         <div class="card">
+    //                 <div class="img">
+    //                   <img src="${Productcs.Image}" alt="" />
+    //                 </div>
+    //                 <p>${Productcs.Name}</p>
+    //                 <p>${Productcs.Price}</p>
+    //               </div>
+    // `;
+    //         productListElement.appendChild(productElement);
+    //       });
+    //     })
+    //     .catch((error) => console.error("Error fetching products:", error));
+    // }
+    //   showAllProducts();
+
+    // function handleCrrateFrom() {
+    //   let createBtn = document.querySelector("#create");
+
+    //   createBtn.onclick = function () {
+    //     let name = document.querySelector('input[name="name"]').value;
+    //     let description = document.querySelector(
+    //       'input[name="description"]'
+    //     ).value;
+    //     let quantity = document.querySelector('input[name="quantity"]').value;
+    //     let price = document.querySelector('input[name="price"]').value;
+
+    //     let formData = {
+    //       name: name,
+    //       description: description,
+    //       quantity: quantity,
+    //       price: price,
+    //     };
+    //     createProducts(formData, function () {
+    //       getProducts(renderProducts);
+    //     });
+    //   };
+    // }
+  </script>
+</html>

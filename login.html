@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./vendor/boostrap.css" />
+    <link rel="stylesheet" href="./CSS/login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="login-title">Log in</h2>
+
+      <form class="login-form" id="form-login">
+        <div>
+          <label for="name">Name </label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Eren Buruk"
+            name="name"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="password">Password </label>
+          <input
+            id="password"
+            type="password"
+            placeholder="password"
+            name="password"
+            required
+          />
+        </div>
+
+        <button
+          class="btn btn--form"
+          type="submit"
+          value="Log in"
+          id="button-login"
+        >
+          Log in
+        </button>
+
+        <p>Don't have an account? <a href="/register.html">Register</a></p>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/validation.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
